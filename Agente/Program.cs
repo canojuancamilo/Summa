@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Agente.Application;
+using Agente.Core.Interfaces;
 
 namespace Agente
 {
@@ -10,6 +7,10 @@ namespace Agente
     {
         static void Main(string[] args)
         {
+            IFunciones funciones = new AgenteC();
+
+            var mainApplication = new MainApplication(funciones);
+            mainApplication.Run();
         }
     }
 }
