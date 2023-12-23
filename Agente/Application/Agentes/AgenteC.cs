@@ -7,7 +7,7 @@ using System.Web.Services.Description;
 
 namespace Agente.Application
 {
-    internal class AgenteC : IFunciones
+    public class AgenteC : IFunciones
     {
         public double GetMedia(List<double> numbers)
         {

@@ -18,11 +18,10 @@ namespace Agente.Application
 
         public void Run()
         {
-            var numbers = new List<double> { 1.0, 2.0, 3.0, 4.0, 5.0 };
+            var numbers = new List<double> { 1, 2, 3, 4, 5 };
             var media = funciones.GetMedia(numbers);
             Console.WriteLine($"Media: {media}");
 
-            // Lógica para imprimir escalera
             var staircase = funciones.GetStaircase(4);
             Console.WriteLine("Escalera:");
             Console.WriteLine(staircase);

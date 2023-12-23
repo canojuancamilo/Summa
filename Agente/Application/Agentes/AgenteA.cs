@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Agente.Application
 {
-    internal class AgenteA : IFunciones
+    public class AgenteA : IFunciones
     {
         public double GetMedia(List<double> numbers)
         {
